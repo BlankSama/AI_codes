@@ -19,7 +19,7 @@ from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 X[:, 2] = le.fit_transform(X[:, 2])
 print(X)
-# One Hot Encoding the "Geography" column
+# One Hot Encoding the "Geography" column3
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [1])], remainder='passthrough')
